@@ -6,15 +6,15 @@ import 'package:news_app/services/news_service.dart';
 import 'package:news_app/widgets/error_message.dart';
 import 'package:news_app/widgets/news_list.dart';
 
-class NewListBuilder extends StatefulWidget {
+class NewsListBuilder extends StatefulWidget {
   final String category;
-  const NewListBuilder({super.key, required this.category});
+  const NewsListBuilder({super.key, required this.category});
 
   @override
-  State<NewListBuilder> createState() => _NewListBuilderState();
+  State<NewsListBuilder> createState() => _NewsListBuilderState();
 }
 
-class _NewListBuilderState extends State<NewListBuilder> {
+class _NewsListBuilderState extends State<NewsListBuilder> {
   late Future<List<ArticleModel>> future;
 
   bool isLoading = true;

@@ -8,8 +8,10 @@ class ArticleModel {
     required this.image,
   });
   factory ArticleModel.fromJson(json) {
-    return ArticleModel(  image: json['urlToImage'],
-          title: json['title'],
-          subTitle: json['description'],);
+    return ArticleModel(
+      image: json['urlToImage'],
+      title: json['title'],
+      subTitle: json['description'],
+    );
   }
 }
