@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/widgets/new_list_builder.dart';
+import 'package:news_app/widgets/news_list_builder.dart';
 
 class CategoryView extends StatelessWidget {
   final String category;
@@ -19,7 +19,7 @@ class CategoryView extends StatelessWidget {
       ),
       body: CustomScrollView(
         slivers: [
-          NewListBuilder(
+          NewsListBuilder(
             category: category,
           )
         ],
